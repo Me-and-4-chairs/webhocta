@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Học Tiếng Anh</title>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Học Tiếng Anh Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Khóa Học</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li class="user-icon">
+                        <span class="icon" id="user-icon">&#128100;</span>
+                        <div class="dropdown">
+                            <a href="#" id="login-btn">Đăng Nhập</a>
+                            <a href="#" id="register-btn">Đăng Ký</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Chào Mừng Đến Với Trang Học Tiếng Anh!</h2>
+            <p>Khám phá các khóa học và tài liệu học tập chất lượng.</p>
+        </section>
+    </main>
+
+    <!-- Hộp thoại đăng nhập -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Đăng Nhập</h2>
+            <form id="login-form">
+                <label for="username">Tên người dùng:</label>
+                <input type="text" id="username" required>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Đăng Nhập</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hộp thoại đăng ký -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Đăng Ký</h2>
+            <form id="register-form">
+                <label for="new-username">Tên người dùng:</label>
+                <input type="text" id="new-username" required>
+                <label for="new-password">Mật khẩu:</label>
+                <input type="password" id="new-password" required>
+                <button type="submit">Đăng Ký</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Học Tiếng Anh Online. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="myjs.js"></script>
+</body>
+</html>
