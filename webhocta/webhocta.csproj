@@ -58,6 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="api.aspx" />
+    <Content Include="img\t1.jpg" />
+    <Content Include="img\t2.jpg" />
+    <Content Include="img\t3.jpg" />
+    <Content Include="img\t4.jpg" />
+    <Content Include="img\t5.jpg" />
     <Content Include="index.html" />
     <Content Include="js\jquery-ui.min.css" />
     <Content Include="js\jquery-ui.min.js" />
@@ -76,6 +81,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

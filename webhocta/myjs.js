@@ -3,7 +3,6 @@ const registerBtn = document.getElementById("register-btn");
 const modal = document.getElementById("login-modal");
 const registerModal = document.getElementById("register-modal");
 const closeBtns = document.querySelectorAll(".close-btn");
-const userIcon = document.getElementById("user-icon");
 
 // Mở hộp thoại đăng nhập
 loginBtn.onclick = function () {
@@ -40,7 +39,7 @@ document.getElementById("login-form").onsubmit = function (e) {
     // Kiểm tra đăng nhập (giả định)
     if (username === "admin" && password === "password") {
         alert("Đăng nhập thành công!");
-        modal.style.display = "none"; // Đóng hộp thoại
+        modal.style.display = "none";
     } else {
         alert("Tên người dùng hoặc mật khẩu không đúng.");
     }
@@ -52,7 +51,45 @@ document.getElementById("register-form").onsubmit = function (e) {
     const newUsername = document.getElementById("new-username").value;
     const newPassword = document.getElementById("new-password").value;
 
-    // Kiểm tra đăng ký (giả định)
     alert("Đăng ký thành công cho " + newUsername + "!");
-    registerModal.style.display = "none"; // Đóng hộp thoại
+    registerModal.style.display = "none";
 }
+
+// Carousel hình ảnh
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-images img');
+const totalImages = images.length;
+
+// Hàm hiển thị hình ảnh tiếp theo
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % totalImages;
+    updateCarousel();
+}
+
+// Hàm hiển thị hình ảnh trước
+function showPreviousImage() {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    updateCarousel();
+}
+
+// Hàm cập nhật carousel
+function updateCarousel() {
+    const offset = -currentIndex * 100;
+    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+    updateDots();
+}
+
+// Cập nhật dấu chấm
+function updateDots() {
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+}
+
+// Thay đổi hình ảnh mỗi 5 giây
+setInterval(showNextImage, 5000);
+
+// Thêm sự kiện cho các nút
+document.querySelector('.prev').onclick = showPreviousImage;
+document.querySelector('.next').onclick = showNextImage;
