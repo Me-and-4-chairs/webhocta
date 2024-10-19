@@ -93,3 +93,27 @@ setInterval(showNextImage, 5000);
 // Thêm sự kiện cho các nút
 document.querySelector('.prev').onclick = showPreviousImage;
 document.querySelector('.next').onclick = showNextImage;
+
+// Sự kiện cho các nút điều hướng
+document.getElementById("home-btn").onclick = function () {
+    window.location.href = window.location.href; // Tải lại trang hiện tại
+}
+
+document.getElementById("courses-btn").onclick = function () {
+    window.location.href = "khoaHoc.html"; // Đường dẫn đến trang khóa học
+}
+
+document.getElementById("contact-btn").onclick = function () {
+    const contactSection = document.getElementById("contact");
+    contactSection.scrollIntoView({ behavior: 'smooth' }); // Cuộn mượt mà đến phần liên hệ
+}
+
+// Thay đổi màu nền header khi cuộn
+window.onscroll = function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) { // Thay đổi từ pageYOffset thành scrollY
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+};

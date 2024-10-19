@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Học Tiếng Anh</title>
     <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -12,9 +14,9 @@
             <h1>Học Tiếng Anh Online</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Trang Chủ</a></li>
-                    <li><a href="#">Khóa Học</a></li>
-                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#" id="home-btn">Trang Chủ</a></li>
+                    <li><a href="khoaHoc.html" id="courses-btn">Khóa Học</a></li>
+                    <li><a href="#contact" id="contact-btn">Liên Hệ</a></li>
                     <li class="user-icon">
                         <span class="icon" id="user-icon">&#128100;</span>
                         <div class="dropdown">
@@ -24,6 +26,7 @@
                     </li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
@@ -43,45 +46,38 @@
             </div>
         </section>
 
-
-
         <section class="welcome">
             <h2>Chào Mừng Đến Với Trang Học Tiếng Anh!</h2>
             <p>Khám phá các khóa học và tài liệu học tập chất lượng.</p>
         </section>
+
+        <!-- Thêm phần Làm Bài Test -->
+        <section class="test">
+            <h2>Làm Bài Test</h2>
+            <div class="test-images">
+                <img src="img/t3.jpg" alt="Bài Test 1">
+                <img src="img/t4.jpg" alt="Bài Test 2">
+                <img src="img/t5.jpg" alt="Bài Test 3">
+            </div>
+        </section>
     </main>
 
-    <div id="login-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Đăng Nhập</h2>
-            <form id="login-form">
-                <label for="username">Tên người dùng:</label>
-                <input type="text" id="username" required>
-                <label for="password">Mật khẩu:</label>
-                <input type="password" id="password" required>
-                <button type="submit">Đăng Nhập</button>
-            </form>
+    <!-- Cập nhật phần liên hệ -->
+    <!-- Cập nhật phần liên hệ -->
+    <!-- Cập nhật phần liên hệ -->
+    <footer id="contact">
+        <h2>Liên Hệ</h2>
+        <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>
+        <p>Email: contact@example.com</p>
+        <p>Điện thoại: (123) 456-7890</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-    </div>
-
-    <div id="register-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Đăng Ký</h2>
-            <form id="register-form">
-                <label for="new-username">Tên người dùng:</label>
-                <input type="text" id="new-username" required>
-                <label for="new-password">Mật khẩu:</label>
-                <input type="password" id="new-password" required>
-                <button type="submit">Đăng Ký</button>
-            </form>
-        </div>
-    </div>
-
-    <footer>
         <p>&copy; 2024 Học Tiếng Anh Online. Tất cả quyền được bảo lưu.</p>
     </footer>
+
 
     <script src="myjs.js"></script>
 </body>

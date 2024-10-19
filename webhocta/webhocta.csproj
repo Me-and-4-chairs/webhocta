@@ -67,6 +67,7 @@
     <Content Include="js\jquery-ui.min.css" />
     <Content Include="js\jquery-ui.min.js" />
     <Content Include="js\jquery.min.js" />
+    <Content Include="khoaHoc.html" />
     <Content Include="mycss.css" />
     <Content Include="myjs.js" />
     <Content Include="Web.config" />
