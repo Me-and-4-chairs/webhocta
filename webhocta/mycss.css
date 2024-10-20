@@ -1,9 +1,11 @@
 ﻿body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; /* Thêm dòng này nếu cần thiết */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
 
 header {
     background: #333;
@@ -115,9 +117,10 @@ nav ul li {
         height: auto;
     }
 
+
 button {
     position: absolute;
-    top: 50%;
+    
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -128,10 +131,12 @@ button {
 
 .prev {
     left: 10px;
+    top:50%;
 }
 
 .next {
     right: 10px;
+    top: 50%;
 }
 
 .dots {
@@ -229,3 +234,50 @@ footer {
         .social-icons a:hover {
             color: #e67e22; /* Màu khi hover */
         }
+
+.kiemtra {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Giữ khoảng cách giữa box */
+    max-width: 800px;
+    text-align: center; /* Canh giữa tiêu đề */
+}
+
+.kiemtra-content {
+    display: grid; /* Sử dụng grid cho phần nội dung */
+    grid-template-columns: 1fr 1fr; /* Hai cột: hình ảnh và nội dung */
+
+}
+
+.kiemtra-image {
+    width: 100%; /* Đảm bảo hình ảnh không vượt quá cột */
+    height: auto; /* Giữ tỷ lệ */
+    border-radius: 8px; /* Bo góc hình ảnh */
+}
+
+.kiemtra-text {
+    padding: 0 20px; /* Khoảng cách giữa text và hình ảnh */
+    text-align: left; /* Canh text bên trái */
+}
+
+.kiemtra-button {
+    position: relative;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+    
+}
+
+    .kiemtra-button:hover {
+        background-color: #2980b9; /* Màu nền khi hover */
+    }
+a {
+    text-decoration: none;
+}

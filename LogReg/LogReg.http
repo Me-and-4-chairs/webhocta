@@ -1,0 +1,6 @@
+@LogReg_HostAddress = http://localhost:5244
+
+GET {{LogReg_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

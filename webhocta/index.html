@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +7,10 @@
     <title>Trang Học Tiếng Anh</title>
     <link rel="stylesheet" href="mycss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -60,11 +65,52 @@
                 <img src="img/t5.jpg" alt="Bài Test 3">
             </div>
         </section>
+
+        <!--     -->
+        <section class="kiemtra">
+            <h2>Kiểm Tra</h2>
+            <div class="kiemtra-content">
+                <img src="img/t5.jpg" alt="Mô tả hình ảnh" class="kiemtra-image">
+                <div class="kiemtra-text">
+                    <h3>Tiêu đề Kiểm Tra</h3>
+                    <p>Đây là dòng chữ mô tả cho phần kiểm tra.</p>
+                    <a class="kiemtra-button" id="lv-button" href="testLevel.html" target="_blank"> Nhấn vào đây </a>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
-    <!-- Cập nhật phần liên hệ -->
-    <!-- Cập nhật phần liên hệ -->
-    <!-- Cập nhật phần liên hệ -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Đăng Nhập</h2>
+            <form id="login-form">
+                <label for="username">Tên người dùng:</label>
+                <input type="text" id="username" required>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Đăng Nhập</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Đăng Ký</h2>
+            <form id="register-form">
+                <label for="new-username">Tên người dùng:</label>
+                <input type="text" id="new-username" required>
+                <label for="new-password">Mật khẩu:</label>
+                <input type="password" id="new-password" required>
+                <button type="submit">Đăng Ký</button>
+            </form>
+        </div>
+    </div>
+
     <footer id="contact">
         <h2>Liên Hệ</h2>
         <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>

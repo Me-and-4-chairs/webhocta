@@ -103,6 +103,14 @@ document.getElementById("courses-btn").onclick = function () {
     window.location.href = "khoaHoc.html"; // Đường dẫn đến trang khóa học
 }
 
+
+
+document.getElementById("lv-button").onclick = function () {
+    window.location.href = "testLevel.html"; // Đường dẫn đến trang khóa học
+}
+
+
+
 document.getElementById("contact-btn").onclick = function () {
     const contactSection = document.getElementById("contact");
     contactSection.scrollIntoView({ behavior: 'smooth' }); // Cuộn mượt mà đến phần liên hệ
