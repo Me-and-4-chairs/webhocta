@@ -65,7 +65,7 @@
 
     // Sự kiện cho các nút điều hướng
     document.getElementById("home-btn").onclick = function () {
-        window.location.href = window.location.href; // Tải lại trang hiện tại
+        window.location.href = "index.html"; // Đường dẫn đến trang chính
     };
 
     document.getElementById("courses-btn").onclick = function () {

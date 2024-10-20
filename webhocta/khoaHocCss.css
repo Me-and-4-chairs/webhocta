@@ -29,13 +29,12 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .containerone {
     display: flex;
     justify-content: flex-start;
-    align-items:center;
+    align-items: center;
 }
 
 nav ul li {
@@ -118,166 +117,7 @@ header.scrolled .dropdown a {
 }
 
 
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 1000px; /* Tăng kích thước tối đa */
-    margin: 20px auto;
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-    .carousel-images img {
-        width: 100%;
-        height: auto;
-        border-radius: 20px; /* Bo tròn ảnh */
-        object-fit: cover; /* Đảm bảo hình ảnh giữ tỷ lệ */
-        max-height: 600px; /* Tăng chiều cao tối đa của ảnh */
-    }
-
-button {
-    position: absolute;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 15px 20px; /* Kích thước nút */
-    cursor: pointer;
-    border-radius: 5px; /* Bo góc nút */
-    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
-    z-index: 10; /* Đảm bảo nút nằm trên các thành phần khác */
-}
-
-    button:hover {
-        background-color: rgba(0, 0, 0, 0.8); /* Màu nền khi hover */
-        /* Bỏ phần transform để không phóng to */
-    }
-
-
-.prev {
-    left: 10px;
-    top: 50%;
-}
-
-.next {
-    right: 10px;
-    top: 50%;
-}
-
-.dots {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.dot {
-    display: inline-block;
-    width: 12px; /* Kích thước dấu chấm */
-    height: 12px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-    .dot.active {
-        background-color: #717171;
-    }
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-.welcome-image {
-    width: 100%; /* Điều chỉnh kích thước theo nhu cầu */
-    height: auto; /* Đảm bảo tỉ lệ hình ảnh đúng */
-    display: block; /* Ngăn chặn khoảng trắng bên dưới hình ảnh */
-}
-
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.close-btn {
-    float: right;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-.join-community {
-    text-align: center;
-    padding: 60px 0; /* Tăng padding trên và dưới */
-    background-color: #ffccff; /* Màu nền hồng */
-}
-
-    .join-community h2 {
-        margin-bottom: 60px; /* Tăng khoảng cách giữa tiêu đề và các icon */
-        text-transform: uppercase; /* Chữ in hoa */
-    }
-
-.community-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px; /* Khoảng cách giữa các icon */
-}
-
-.icon-item {
-    transition: transform 0.3s, opacity 0.3s; /* Hiệu ứng chuyển động và làm mờ */
-    flex: 1; /* Để các icon chia đều không gian */
-    max-width: 150px; /* Giới hạn kích thước icon item */
-    opacity: 1; /* Đặt độ mờ ban đầu */
-    border-radius: 8px; /* Bo góc */
-    padding: 20px; /* Khoảng cách bên trong box */
-    background-color: transparent; /* Làm cho box trong suốt */
-}
-
-    .icon-item:hover {
-        transform: scale(1.1); /* Phóng to box khi hover */
-    }
-
-    .icon-item a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none;
-        color: #333; /* Màu chữ */
-    }
-
-    .icon-item i {
-        font-size: 60px; /* Kích thước icon lớn hơn */
-        transition: transform 0.3s; /* Hiệu ứng cho icon */
-    }
-
-    .icon-item:hover i {
-        transform: scale(1.2); /* Phóng to icon khi hover */
-    }
-
-    .icon-item span {
-        margin-top: 10px; /* Khoảng cách giữa icon và chữ */
-        font-size: 20px; /* Kích thước chữ */
-    }
-
-
-/* Các phần còn lại của CSS giữ nguyên */
+/* Footer */
 footer {
     background-color: #180161; /* Màu nền */
     padding: 20px;
@@ -356,7 +196,6 @@ footer p {
     margin-top: 10px;
     font-size: 20px;
     color: #FFFFFF; /* Màu chữ trắng */
-    
 }
 
 h3 {
@@ -364,41 +203,67 @@ h3 {
     font-size: 1.5rem; /* Kích thước chữ h3 lớn hơn */
 }
 
+/* Section chung cho tất cả các khóa học */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff; /* Màu nền trắng cho các section */
+    border-radius: 10px; /* Bo góc cho section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho section */
+}
 
-.kiemtra {
+/* Section dành cho người mới bắt đầu */
+.beginner {
+    border-left: 5px solid #4CAF50; /* Viền bên trái màu xanh lá */
+}
+
+    .beginner h2 {
+        color: #4CAF50; /* Màu tiêu đề xanh lá */
+    }
+
+/* Section dành cho người trung cấp */
+.intermediate {
+    border-left: 5px solid #2196F3; /* Viền bên trái màu xanh dương */
+}
+
+    .intermediate h2 {
+        color: #2196F3; /* Màu tiêu đề xanh dương */
+    }
+
+/* Section dành cho người nâng cao */
+.advanced {
+    border-left: 5px solid #FF9800; /* Viền bên trái màu cam */
+}
+
+    .advanced h2 {
+        color: #FF9800; /* Màu tiêu đề cam */
+    }
+
+/* Định dạng cho các hộp khóa học */
+.khoaHocs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.khoaHocbox {
+    background: #f9f9f9; /* Màu nền cho hộp khóa học */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Đặt chiều rộng cho hộp khóa học */
     text-align: center;
-    padding: 40px 0;
-    position: relative; /* Để định vị nút bấm */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho hộp khóa học */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng khi hover */
 }
 
-.kiemtra-content {
-    display: inline-block; /* Để hình ảnh và nút bấm nằm trong cùng một khối */
-    font-size:25px;
-   
-}
+    .khoaHocbox:hover {
+        transform: translateY(-5px); /* Hiệu ứng nâng lên khi hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Đổ bóng sâu hơn khi hover */
+    }
 
-.kiemtra-image {
-    max-width: 100%;
-    height: auto; /* Đảm bảo hình ảnh tự động điều chỉnh kích thước */
-    border-radius: 8px; /* Bo góc hình ảnh */
-}
-
-.kiemtra-button {
-    position: absolute; /* Định vị tuyệt đối */
-    bottom: 35%; /* Tăng khoảng cách từ đáy hình ảnh lên 20% */
-    right: 15%; /* Giảm khoảng cách từ bên phải xuống 15% */
-    padding: 10px 20px;
-    background-color: transparent; /* Màu nền nút */
-    color: #e8487a; /* Màu chữ */
-    
-    border: 1px solid #e8487a;
-    border-radius: 5px; /* Bo góc nút */
-    text-decoration: none; /* Bỏ gạch chân */
-    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
-}
-
-
-    .kiemtra-button:hover {
-        background-color: #ff6a97; /* Màu nền khi hover */
-        color:white;
+    .khoaHocbox h3 {
+        margin: 10px 0;
+        color: #333; /* Màu chữ cho tiêu đề hộp khóa học */
     }

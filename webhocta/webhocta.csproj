@@ -65,16 +65,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="api.aspx" />
+    <Content Include="img\logocta.jpg" />
+    <Content Include="img\logoone.png" />
     <Content Include="img\t1.jpg" />
+    <Content Include="img\t1.png" />
     <Content Include="img\t2.jpg" />
+    <Content Include="img\t2.png" />
     <Content Include="img\t3.jpg" />
+    <Content Include="img\t3.png" />
     <Content Include="img\t4.jpg" />
+    <Content Include="img\t4.png" />
     <Content Include="img\t5.jpg" />
+    <Content Include="img\testp.png" />
     <Content Include="index.html" />
     <Content Include="js\jquery-ui.min.css" />
     <Content Include="js\jquery-ui.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="khoaHoc.html" />
+    <Content Include="khoaHocCss.css" />
     <Content Include="mycss.css" />
     <Content Include="myjs.js" />
     <Content Include="signCss.css" />

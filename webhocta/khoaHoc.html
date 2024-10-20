@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khóa Học</title>
-    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="khoaHocCss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,13 @@
 <body>
     <header>
         <div class="container">
-            <h1>Học Tiếng Anh Online</h1>
+            <div class="containerone">
+                <img src="img/logoone.png" width="150" height="82">
+                <h1>CTA ENGLISH</h1>
+            </div>
             <nav>
                 <ul>
+                    <li></li>
                     <li><a href="#" id="home-btn">Trang Chủ</a></li>
                     <li><a href="khoaHoc.html" id="courses-btn">Khóa Học</a></li>
                     <li><a href="#contact" id="contact-btn">Liên Hệ</a></li>
@@ -33,23 +37,66 @@
     </header>
 
     <main>
-        <section class="courses">
-            <h2>Các Khóa Học Hiện Có</h2>
-            <ul>
-                <li>Khóa Học 1: Học Ngữ Pháp Cơ Bản</li>
-                <li>Khóa Học 2: Từ Vựng Chuyên Ngành</li>
-                <li>Khóa Học 3: Kỹ Năng Nói Tiếng Anh</li>
-                <li>Khóa Học 4: Học Nghe Hiệu Quả</li>
-                <li>Khóa Học 5: Luyện Thi TOEFL</li>
-            </ul>
+        <section class="beginner">
+            <h2>Các Khóa Học Dành Cho Người Mới Bắt Đầu</h2>
+            <div class="khoaHocs">
+                <div class="khoaHocbox beginner">
+                    <h3>Beginner 1: Ngữ Pháp Cơ Bản</h3>
+                </div>
+                <div class="khoaHocbox beginner">
+                    <h3>Beginner 2: Từ Vựng Cơ Bản</h3>
+                </div>
+                <div class="khoaHocbox beginner">
+                    <h3>Beginner 3: Kỹ Năng Nói</h3>
+                </div>
+                <div class="khoaHocbox beginner">
+                    <h3>Beginner 4: Kỹ Năng Nghe</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="intermediate">
+            <h2>Các Khóa Học Dành Cho Người Trung Cấp</h2>
+            <div class="khoaHocs">
+                <div class="khoaHocbox intermediate">
+                    <h3>Intermediate 1: Ngữ Pháp Trung Cấp</h3>
+                </div>
+                <div class="khoaHocbox intermediate">
+                    <h3>Intermediate 2: Từ Vựng Chuyên Ngành</h3>
+                </div>
+                <div class="khoaHocbox intermediate">
+                    <h3>Intermediate 3: Phát Âm Chuẩn</h3>
+                </div>
+                <div class="khoaHocbox intermediate">
+                    <h3>Intermediate 4: Giao Tiếp Hằng Ngày</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="advanced">
+            <h2>Các Khóa Học Dành Cho Người Nâng Cao</h2>
+            <div class="khoaHocs">
+                <div class="khoaHocbox advanced">
+                    <h3>Advanced 1: Ngữ Pháp Nâng Cao</h3>
+                </div>
+                <div class="khoaHocbox advanced">
+                    <h3>Advanced 2: Kỹ Năng Nói Nâng Cao</h3>
+                </div>
+                <div class="khoaHocbox advanced">
+                    <h3>Advanced 3: Kỹ Năng Viết Chuyên Sâu</h3>
+                </div>
+                <div class="khoaHocbox advanced">
+                    <h3>Advanced 4: Luyện Thi TOEFL</h3>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer id="footer">
         <div class="footer-container">
             <div class="footer-info">
-                <h3>Học Tiếng Anh Online</h3>
-                <img src="path/to/your/image.jpg" alt="Thông tin" class="footer-image">
+                <!-- <h3>Học Tiếng Anh Online</h3> -->
+                <img src="img/logocta.jpg" alt="Thông tin" class="footer-image">
             </div>
             <div class="footer-address">
                 <h3>Thông Tin Liên Hệ</h3>
@@ -69,7 +116,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Học Tiếng Anh Online. Tất cả quyền được bảo lưu.</p>
+            <p style="font-size:14px">&copy; Copyright © CTA ENGLISH. All rights reserved.</p>
         </div>
     </footer>
 
