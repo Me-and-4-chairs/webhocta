@@ -7,8 +7,9 @@
 }
 
 
+/* Màu chữ trong header */
 header {
-    background: #333;
+    background: #93C6E7;
     color: #fff;
     padding: 10px 0;
     position: sticky; /* Thêm thuộc tính sticky */
@@ -21,7 +22,7 @@ header {
         background: rgba(51, 51, 51, 0.9); /* Thay đổi màu nền khi cuộn */
     }
 
-
+/* Container và nav */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -37,22 +38,28 @@ nav ul li {
     transition: transform 0.3s, color 0.3s; /* Thêm hiệu ứng chuyển động */
 }
 
-    nav ul li:hover {
-        transform: translateY(-3px); /* Đẩy lên một chút khi hover */
-    }
-
     nav ul li a {
-        color: #fff;
+        color: #fff; /* Màu chữ mặc định */
         text-decoration: none;
         transition: color 0.3s, text-shadow 0.3s;
+        font-size: 18px; /* Kích cỡ chữ mặc định */
     }
 
-        nav ul li a:hover {
-            color: #e67e22; /* Đổi màu chữ khi hover */
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Thêm bóng chữ khi hover */
-        }
+/* Đổi màu chữ trong header khi cuộn */
+header.scrolled nav ul li a {
+    color: #FFFFFF; /* Đổi màu chữ khi cuộn */
+}
 
+/* Hover cho nav */
+nav ul li:hover {
+    transform: translateY(-3px); /* Đẩy lên một chút khi hover */
+}
 
+    nav ul li:hover a {
+        font-size: 20px; /* Kích cỡ chữ lớn hơn khi hover */
+    }
+
+/* Dropdown */
 .user-icon {
     position: relative;
 }
@@ -68,11 +75,10 @@ nav ul li {
         color: #e67e22; /* Đổi màu biểu tượng khi hover */
     }
 
-
 .dropdown {
     display: none;
     position: absolute;
-    background: #fff;
+    background: #f1f1f1; /* Màu nền dropdown */
     border: 1px solid #ccc;
     z-index: 1000;
     top: 100%;
@@ -88,21 +94,28 @@ nav ul li {
 .dropdown a {
     display: block;
     padding: 12px 15px;
-    color: #333;
+    color: #333; /* Màu chữ mặc định trong dropdown */
     text-decoration: none;
     text-align: center;
 }
 
+    /* Màu chữ khi hover trong dropdown */
     .dropdown a:hover {
-        background: #3498db;
-        color: #fff;
+        background: #3498db; /* Màu nền khi hover vào link */
+        color: #fff; /* Màu chữ khi hover */
     }
+
+/* Giữ nguyên màu chữ trong dropdown khi cuộn */
+header.scrolled .dropdown a {
+    color: #333; /* Giữ nguyên màu chữ trong dropdown khi cuộn */
+}
+
 
 .carousel {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px; /* Tăng kích thước tối đa */
     margin: 20px auto;
 }
 
@@ -113,25 +126,34 @@ nav ul li {
 
     .carousel-images img {
         width: 100%;
-        max-width: 100%;
         height: auto;
+        border-radius: 20px; /* Bo tròn ảnh */
+        object-fit: cover; /* Đảm bảo hình ảnh giữ tỷ lệ */
+        max-height: 600px; /* Tăng chiều cao tối đa của ảnh */
     }
-
 
 button {
     position: absolute;
-    
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px 20px; /* Kích thước nút */
     cursor: pointer;
+    border-radius: 5px; /* Bo góc nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+    z-index: 10; /* Đảm bảo nút nằm trên các thành phần khác */
 }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.8); /* Màu nền khi hover */
+        /* Bỏ phần transform để không phóng to */
+    }
+
 
 .prev {
     left: 10px;
-    top:50%;
+    top: 50%;
 }
 
 .next {
@@ -146,8 +168,8 @@ button {
 
 .dot {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 12px; /* Kích thước dấu chấm */
+    height: 12px;
     margin: 0 5px;
     background-color: #bbb;
     border-radius: 50%;
@@ -157,7 +179,6 @@ button {
     .dot.active {
         background-color: #717171;
     }
-
 
 main {
     padding: 20px;
@@ -197,87 +218,178 @@ main {
     cursor: pointer;
 }
 
-.test {
+.join-community {
     text-align: center;
-    padding: 20px;
+    padding: 40px 0;
+    background-color: #ffccff; /* Màu nền hồng */
 }
 
-.test-images {
+    .join-community h2 {
+        margin-bottom: 40px; /* Khoảng cách giữa tiêu đề và các icon */
+        text-transform: uppercase; /* Chữ in hoa */
+    }
+
+.community-icons {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Khoảng cách giữa các hình ảnh */
+    gap: 30px; /* Khoảng cách giữa các icon */
 }
 
-    .test-images img {
-        width: 200px; /* Chiều rộng hình ảnh */
-        height: auto; /* Giữ tỷ lệ */
+.icon-item {
+    transition: transform 0.3s, opacity 0.3s; /* Hiệu ứng chuyển động và làm mờ */
+    flex: 1; /* Để các icon chia đều không gian */
+    max-width: 150px; /* Giới hạn kích thước icon item */
+    opacity: 1; /* Đặt độ mờ ban đầu */
+    border-radius: 8px; /* Bo góc */
+    padding: 20px; /* Khoảng cách bên trong box */
+    background-color: transparent; /* Làm cho box trong suốt */
+    /* Bỏ đi đổ bóng để không làm nổi bật box */
+}
+
+    .icon-item:hover {
+        transform: scale(1.1); /* Phóng to box khi hover */
     }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-}
-
-.social-icons {
-    margin: 10px 0;
-}
-
-    .social-icons a {
-        color: #fff; /* Màu chữ */
-        margin: 0 10px; /* Khoảng cách giữa các icon */
-        font-size: 24px; /* Kích thước icon */
-        transition: color 0.3s;
-    }
-
-        .social-icons a:hover {
-            color: #e67e22; /* Màu khi hover */
+        .icon-item:hover ~ .icon-item {
+            opacity: 0.5; /* Làm mờ các box khác khi hover */
         }
 
-.kiemtra {
-    background: #fff;
+    .icon-item a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #333; /* Màu chữ */
+    }
+
+    .icon-item i {
+        font-size: 60px; /* Kích thước icon lớn hơn */
+        transition: transform 0.3s; /* Hiệu ứng cho icon */
+    }
+
+    .icon-item:hover i {
+        transform: scale(1.2); /* Phóng to icon khi hover */
+    }
+
+    .icon-item span {
+        margin-top: 10px; /* Khoảng cách giữa icon và chữ */
+        font-size: 20px; /* Kích thước chữ */
+    }
+
+.footer-address i:hover {
+    color: #FF3B6A; /* Màu hồng khi hover */
+}
+
+header a:hover {
+    color: #091057; /* Màu khi hover ở header */
+}
+
+/* Các phần còn lại của CSS giữ nguyên */
+footer {
+    background-color: #180161; /* Màu nền */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Giữ khoảng cách giữa box */
-    max-width: 800px;
-    text-align: center; /* Canh giữa tiêu đề */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer-info, .footer-address, .footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-image {
+    border-radius: 50%; /* Hình tròn */
+    width: 100px; /* Kích thước ảnh */
+    height: 100px; /* Kích thước ảnh */
+    margin-top: 10px;
+}
+
+.footer-address p {
+    margin: 5px 0;
+    display: flex; /* Để hiển thị icon và văn bản trên cùng một dòng */
+    align-items: center; /* Căn giữa icon và văn bản */
+}
+
+.footer-address i {
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+    color: #FF6A97; /* Màu icon hồng */
+}
+
+.footer-social {
+    text-align: center; /* Căn giữa nội dung */
+}
+
+    .footer-social .social-icons {
+        display: flex;
+        justify-content: center; /* Căn giữa các icon */
+        gap: 15px; /* Khoảng cách giữa các icon */
+    }
+
+    .footer-social a {
+        color: #FF6A97; /* Màu icon hồng */
+        font-size: 24px; /* Kích thước icon */
+        transition: color 0.3s, transform 0.3s; /* Hiệu ứng chuyển màu và biến đổi */
+    }
+
+        .footer-social a:hover {
+            color: #FF3B6A; /* Màu khi hover đậm hơn */
+            transform: scale(1.1); /* Phóng to icon khi hover */
+        }
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #FFFFFF; /* Màu chữ trắng */
+}
+
+h3 {
+    color: #FFFFFF; /* Màu chữ h3 trắng */
+    font-size: 1.5rem; /* Kích thước chữ h3 lớn hơn */
+}
+
+
+.kiemtra {
+    text-align: center;
+    padding: 40px 0;
+    position: relative; /* Để định vị nút bấm */
 }
 
 .kiemtra-content {
-    display: grid; /* Sử dụng grid cho phần nội dung */
-    grid-template-columns: 1fr 1fr; /* Hai cột: hình ảnh và nội dung */
-
+    display: inline-block; /* Để hình ảnh và nút bấm nằm trong cùng một khối */
 }
 
 .kiemtra-image {
-    width: 100%; /* Đảm bảo hình ảnh không vượt quá cột */
-    height: auto; /* Giữ tỷ lệ */
+    max-width: 100%;
+    height: auto; /* Đảm bảo hình ảnh tự động điều chỉnh kích thước */
     border-radius: 8px; /* Bo góc hình ảnh */
 }
 
-.kiemtra-text {
-    padding: 0 20px; /* Khoảng cách giữa text và hình ảnh */
-    text-align: left; /* Canh text bên trái */
+.kiemtra-button {
+    position: absolute; /* Định vị tuyệt đối */
+    bottom: 20%; /* Tăng khoảng cách từ đáy hình ảnh lên 20% */
+    right: 15%; /* Giảm khoảng cách từ bên phải xuống 15% */
+    padding: 10px 20px;
+    background-color: #e8487a; /* Màu nền nút */
+    color: white; /* Màu chữ */
+    border-radius: 5px; /* Bo góc nút */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
 }
 
-.kiemtra-button {
-    position: relative;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 20px;
-    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
-    
-}
 
     .kiemtra-button:hover {
-        background-color: #2980b9; /* Màu nền khi hover */
+        background-color: #ff6a97; /* Màu nền khi hover */
     }
-a {
-    text-decoration: none;
-}

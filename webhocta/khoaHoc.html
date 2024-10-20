@@ -1,5 +1,4 @@
-﻿﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -18,14 +17,14 @@
             <h1>Học Tiếng Anh Online</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" id="home-btn">Trang Chủ</a></li>
+                    <li><a href="#" id="home-btn">Trang Chủ</a></li>
                     <li><a href="khoaHoc.html" id="courses-btn">Khóa Học</a></li>
                     <li><a href="#contact" id="contact-btn">Liên Hệ</a></li>
                     <li class="user-icon">
                         <span class="icon" id="user-icon">&#128100;</span>
                         <div class="dropdown">
-                            <a href="#" id="login-btn">Đăng Nhập</a>
-                            <a href="#" id="register-btn">Đăng Ký</a>
+                            <a href="signin.html" id="SI">Đăng Nhập</a>
+                            <a href="signup.html" id="SU">Đăng Ký</a>
                         </div>
                     </li>
                 </ul>
@@ -46,48 +45,33 @@
         </section>
     </main>
 
-    <div id="login-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Đăng Nhập</h2>
-            <form id="login-form">
-                <label for="username">Tên người dùng:</label>
-                <input type="text" id="username" required>
-                <label for="password">Mật khẩu:</label>
-                <input type="password" id="password" required>
-                <button type="submit">Đăng Nhập</button>
-            </form>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Học Tiếng Anh Online</h3>
+                <img src="path/to/your/image.jpg" alt="Thông tin" class="footer-image">
+            </div>
+            <div class="footer-address">
+                <h3>Thông Tin Liên Hệ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Thành phố XYZ</p>
+                <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> contact@example.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Mạng Xã Hội</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div id="register-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Đăng Ký</h2>
-            <form id="register-form">
-                <label for="new-username">Tên người dùng:</label>
-                <input type="text" id="new-username" required>
-                <label for="new-password">Mật khẩu:</label>
-                <input type="password" id="new-password" required>
-                <button type="submit">Đăng Ký</button>
-            </form>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Học Tiếng Anh Online. Tất cả quyền được bảo lưu.</p>
         </div>
-    </div>
-
-
-    <footer id="contact">
-        <h2>Liên Hệ</h2>
-        <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>
-        <p>Email: contact@example.com</p>
-        <p>Điện thoại: (123) 456-7890</p>
-        <div class="social-icons">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2024 Học Tiếng Anh Online. Tất cả quyền được bảo lưu.</p>
     </footer>
-
 
     <script src="myjs.js"></script>
 </body>

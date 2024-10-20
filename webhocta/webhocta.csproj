@@ -77,6 +77,10 @@
     <Content Include="khoaHoc.html" />
     <Content Include="mycss.css" />
     <Content Include="myjs.js" />
+    <Content Include="signCss.css" />
+    <Content Include="Signin.html" />
+    <Content Include="signJs.js" />
+    <Content Include="Signup.html" />
     <Content Include="testLevel.html" />
     <Content Include="testLevelcss.css" />
     <Content Include="testLeveljs.js" />

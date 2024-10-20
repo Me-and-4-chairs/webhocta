@@ -1,5 +1,4 @@
-﻿﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -7,11 +6,9 @@
     <title>Trang Học Tiếng Anh</title>
     <link rel="stylesheet" href="mycss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
@@ -25,13 +22,12 @@
                     <li class="user-icon">
                         <span class="icon" id="user-icon">&#128100;</span>
                         <div class="dropdown">
-                            <a href="#" id="login-btn">Đăng Nhập</a>
-                            <a href="#" id="register-btn">Đăng Ký</a>
+                            <a href="signin.html" id="SI">Đăng Nhập</a>
+                            <a href="signup.html" id="SU">Đăng Ký</a>
                         </div>
                     </li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
@@ -56,74 +52,79 @@
             <p>Khám phá các khóa học và tài liệu học tập chất lượng.</p>
         </section>
 
-        <!-- Thêm phần Làm Bài Test -->
-        <section class="test">
-            <h2>Làm Bài Test</h2>
-            <div class="test-images">
-                <img src="img/t3.jpg" alt="Bài Test 1">
-                <img src="img/t4.jpg" alt="Bài Test 2">
-                <img src="img/t5.jpg" alt="Bài Test 3">
-            </div>
-        </section>
-
-        <!--     -->
-        <section class="kiemtra">
-            <h2>Kiểm Tra</h2>
-            <div class="kiemtra-content">
-                <img src="img/t5.jpg" alt="Mô tả hình ảnh" class="kiemtra-image">
-                <div class="kiemtra-text">
-                    <h3>Tiêu đề Kiểm Tra</h3>
-                    <p>Đây là dòng chữ mô tả cho phần kiểm tra.</p>
-                    <a class="kiemtra-button" id="lv-button" href="testLevel.html" target="_blank"> Nhấn vào đây </a>
+        <section class="join-community">
+            <h2>HÃY THAM GIA CÙNG CHÚNG TÔI VÀ TRỞ THÀNH MỘT PHẦN CỦA CỘNG ĐỒNG HỌC TIẾNG ANH</h2>
+            <div class="community-icons">
+                <div class="icon-item">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
                 </div>
             </div>
         </section>
 
+        <section class="kiemtra">
+            <div class="kiemtra-content">
+                <img src="img/t5.jpg" alt="Mô tả hình ảnh" class="kiemtra-image">
+                <a class="kiemtra-button" id="lv-button" href="testLevel.html" target="_blank">Nhấn vào đây</a>
+            </div>
+        </section>
 
 
     </main>
 
-    <div id="login-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Đăng Nhập</h2>
-            <form id="login-form">
-                <label for="username">Tên người dùng:</label>
-                <input type="text" id="username" required>
-                <label for="password">Mật khẩu:</label>
-                <input type="password" id="password" required>
-                <button type="submit">Đăng Nhập</button>
-            </form>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Học Tiếng Anh Online</h3>
+                <img src="path/to/your/image.jpg" alt="Thông tin" class="footer-image">
+            </div>
+            <div class="footer-address">
+                <h3>Thông Tin Liên Hệ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Thành phố XYZ</p>
+                <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> contact@example.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Mạng Xã Hội</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div id="register-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Đăng Ký</h2>
-            <form id="register-form">
-                <label for="new-username">Tên người dùng:</label>
-                <input type="text" id="new-username" required>
-                <label for="new-password">Mật khẩu:</label>
-                <input type="password" id="new-password" required>
-                <button type="submit">Đăng Ký</button>
-            </form>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Học Tiếng Anh Online. Tất cả quyền được bảo lưu.</p>
         </div>
-    </div>
-
-    <footer id="contact">
-        <h2>Liên Hệ</h2>
-        <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>
-        <p>Email: contact@example.com</p>
-        <p>Điện thoại: (123) 456-7890</p>
-        <div class="social-icons">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2024 Học Tiếng Anh Online. Tất cả quyền được bảo lưu.</p>
     </footer>
-
 
     <script src="myjs.js"></script>
 </body>
