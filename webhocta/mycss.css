@@ -42,13 +42,13 @@ nav ul li {
     display: inline-block;
     margin: 0 15px;
     position: relative;
-    transition: transform 0.3s, color 0.3s; /* Thêm hiệu ứng chuyển động */
+    transition: transform 0.7s, color 0.7s; /* Thêm hiệu ứng chuyển động */
 }
 
     nav ul li a {
         color: #fff; /* Màu chữ mặc định */
         text-decoration: none;
-        transition: color 0.3s, text-shadow 0.3s;
+        transition: color 0.7s, text-shadow 0.7s;
         font-size: 18px; /* Kích cỡ chữ mặc định */
     }
 
